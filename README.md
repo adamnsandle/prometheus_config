@@ -144,7 +144,7 @@ groups:
     for: 5m
     annotations:
         description: "High iowait value! ({{ $value }} mean for past five minutes)"
-        ```
+```
 
 ## Run everything
 these commands will run prometheus on a local 9092 port (using above .yml files)
