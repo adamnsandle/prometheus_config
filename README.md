@@ -1,4 +1,5 @@
 ## Download and install
+YOU CAN DOWNLOAD PRECOMPILED VERSIONS HERE *https://prometheus.io/download/*
 #### 1. [Prometheus](https://github.com/prometheus/prometheus):
 ```
 $ mkdir -p $GOPATH/src/github.com/prometheus
