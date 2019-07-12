@@ -135,6 +135,18 @@ groups:
     for: 5m
     annotations:
         description: "{{ $value }} space available on /mnt/nvme!"
+   
+   - alert: SDE1_MEM
+    expr: round(node_filesystem_avail_bytes{device="/dev/sde1"} / 1024 / 1024 / 1024) < 5
+    for: 5m
+    annotations:
+        description: "{{ $value }} space available on SDE!!"
+        
+   - alert: SDE1_MEM
+    expr: round(node_filesystem_avail_bytes{device="/dev/sde1"} / 1024 / 1024 / 1024) < 5
+    for: 5m
+    annotations:
+        description: "{{ $value }} space available on /mnt/nvme!"
 
   - alert: MD
    # Fire when disk is not available
